@@ -1,12 +1,16 @@
-#navbar
-{
-  background-color: #43925a;
-}
+#jumbotron-text {
+	color:white;
+	background-color: transparent;
 
-body{
+
+}
+body {
 	background-image: url("/img/manhaj_at_tulabb.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-#spacing {
-	margin-top: 20px;
+.audioplayer {
+	height: 80%;
+	width: 80%;
 }
