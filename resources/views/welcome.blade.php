@@ -20,23 +20,18 @@
       <th scope="col">#</th>
       <th scope="col">Subject</th>
       <th scope="col">Date Added</th>
-      <th scope="col">Play Audio</th>
       <th scope="col">Download</th>
     </tr>
   </thead>
   <tbody>
+    @foreach ($audio as $value)
     <tr>
-      <th scope="row">1</th>
-      <td>Audio1</td>
-      <td>12 Dec 2018</td>
-      <td><audio class="audioplayer" controls>
-  
-  <source src="/audio/Audio47.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio></td>
-      <td><a href="/audio/Audio47.mp3" class="btn btn-outline-light btn-sm" download="Audio47.mp3">Download</a></td>
+      <th scope="row">{{$value->id}}</th>
+      <td>{{$value->subject}}</td>
+      <td>{{$value->created_at}}</td>
+      <td><a href="{{$value->filelink}}" class="btn btn-outline-light btn-sm">Download</a></td>
     </tr>
-    
+    @endforeach
   </tbody>
 </table>
 </div>

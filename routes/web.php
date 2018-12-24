@@ -11,16 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/','Audio_lecturesController@index');
 
 //below the register routes have been set to false, remove it if you need to register a new user.Auth::routes(); to add register functionality
 Auth::routes(['register' => false]);
-Route::post('add_lecture','Audio_lecturesController@storefile');
+Route::post('addlecture','Audio_lecturesController@store');
 Route::get('addlecture', function () {
-    return view('addlecture');
-});
+    return view('hello');
+})->middleware('auth');
 
 
 

@@ -16,7 +16,7 @@ class CreateAudioLecturesTable extends Migration
         Schema::create('audio_lectures', function (Blueprint $table) {
             $table->increments('id');
             $table->string('subject');
-            $table->string('size');
+            $table->string('filelink');
             $table->timestamps();
 
         });
