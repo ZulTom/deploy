@@ -27,4 +27,4 @@ Route::get('deletelecture','Audio_lecturesController@deleteindex')->middleware('
 
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/logout', 'Logincontroller@logout');
+Route::get('/logout', 'Auth\LoginController@logout');
