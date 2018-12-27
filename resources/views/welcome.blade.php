@@ -17,7 +17,7 @@
 <table class="table table-dark">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      
       <th scope="col">Subject</th>
       <th scope="col">Date Added</th>
       <th scope="col">Download</th>
@@ -26,14 +26,17 @@
   <tbody>
     @foreach ($audio as $value)
     <tr>
-      <th scope="row">{{$value->id}}</th>
+      
       <td>{{$value->subject}}</td>
       <td>{{$value->created_at}}</td>
       <td><a href="{{$value->filelink}}" class="btn btn-outline-light btn-sm">Download</a></td>
     </tr>
     @endforeach
   </tbody>
+
 </table>
+{{ $audio->links() }}
+
 </div>
 </div>
   

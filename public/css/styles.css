@@ -8,6 +8,7 @@ body {
 	background-image: url("/img/manhaj_at_tulabb.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 100vh;
 }
 
 .audioplayer {

@@ -21,15 +21,25 @@ class Audio_lecturesController extends Controller
     $audio->filelink = $request->input('filelink');
     $audio->save();
 
+    return redirect()->back();
+
     }
 
     public function index(){
-    	$audio_lectures = DB::table('audio_lectures')->latest()->paginate();
+    	$audio_lectures = DB::table('audio_lectures')->latest()->paginate(8);
     	return view('welcome', ['audio' => $audio_lectures]);
     	
     }
 
-    public function delete() {
-    	$audio_lectures = DB::table('audio_lectures')->latest()->paginate();
+    public function deleteindex(){
+        $audio_lectures = DB::table('audio_lectures')->latest()->paginate(8);
+        return view('deletepage', ['audio' => $audio_lectures]);
+        
+    }
+
+    public function deletebyid($id) {
+        $this->middleware('auth');
+    	Audio_lectures::where('id', $id)->delete();
+        return redirect()->back();
     }
 }
