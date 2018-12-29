@@ -22,7 +22,7 @@
     </ul>
     <div class="form-inline my-2 my-lg-0">
       
-      <a href="{{ url('logout' }}" class="btn btn-danger" type="submit">Logout</a>
+      <a href="{{ url('logout') }}" class="btn btn-danger" type="submit">Logout</a>
     </div>
   </div>
 </nav>
