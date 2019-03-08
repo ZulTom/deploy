@@ -10,6 +10,7 @@
   <div class="container">
     <h1 class="display-4"><strong>Manhaj At Tulaab Audio</strong></h1>
     <p class="lead">Downloadable audio from Ustadh Abdul Haqq</p>
+    <p style="border-style:solid;border-color:black; background-color:grey ;"><b> If you have any problems you or anything I have forgotten from Ustadh Abdul Haqq feel free to email me at manhajattulaab@gmail.com or whatsapp me at 006738963807. </b></p>
   </div>
 </div>
 <div class="container">
